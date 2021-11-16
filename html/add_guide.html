@@ -1,0 +1,71 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ADD user</title>
+    <link
+      rel="stylesheet"
+      href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css"
+    />
+    <!-- load bootstrap via CDN -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js
+    "></script>
+    <!-- load jquery via CDN -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+    <script src="/js/addGuide.js"></script>
+    <!-- load our javascript file -->
+  </head>
+
+  <body>
+    <div class="col-sm-6 col-sm-offset-3">
+      <h1>add new Guide</h1>
+
+      <!-- OUR FORM -->
+      <form id="tour_form" name="user_form" method="POST">
+        <!-- id -->
+        <div id="name-group" class="form-group">
+          <label for="name">name</label>
+          <input
+            type="text"
+            class="form-control"
+            name="name"
+            id="name"
+            placeholder="write id of"
+            required
+          />
+          <!-- errors will go here -->
+        </div>
+        <!-- starting Date -->
+        <div id="name-group" class="form-group">
+          <label for="email">email</label>
+          <input
+            type="email"
+            class="form-control"
+            name="email"
+            id="email"
+            placeholder="email"
+            required
+          />
+        </div>
+        <!-- Duration -->
+        <div id="name-group" class="form-group">
+          <label for="cellular">cellular</label>
+          <input
+            type="tel"
+            class="form-control"
+            name="cellular"
+            id="cellular"
+            placeholder="cellular"
+            required
+          />
+          <!-- errors will go here -->
+        </div>
+        <!-- price -->
+
+        <button type="submit" class="btn btn-success">
+          Submit <span class="fa fa-arrow-right"></span>
+        </button>
+      </form>
+    </div>
+  </body>
+</html>
